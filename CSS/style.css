@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-image: url(../Gallery/IMG-20191114-WA0005.jpg);
+    background-image: url(../Gallery/IMG-20191115-WA0013.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -94,7 +94,7 @@ dropdown:hover .drop-btn {
 }
 
 .header-text {
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     margin-top: 1rem;
     text-align: center;
