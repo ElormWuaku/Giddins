@@ -1,19 +1,66 @@
-.body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
-.header {
-    background-image: url(../Gallery/IMG-20191115-WA0013.jpg);
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active {
+    display: block;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    /* In front of slideshow */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+      width: 100vw;
     height: 100vh;
-    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .logo img {
@@ -23,26 +70,40 @@
 #nav-links {
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
-.ul-list {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+.nav-list .search-container {
+    float: right;
 }
 
 .nav-item {
     text-decoration: none;
-    color: brown;
+    color: black;
+}
+.ul-list {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    align-items: center;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+.ul-list li a:hover {
+    color: blue;
+
 }
 
-.dropdown .drop-btn {
+
+.drop-btn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -52,18 +113,29 @@
     margin: 0;
 }
 
-.nav-list .nav-item,
-dropdown:hover .drop-btn {
-    color: blue;
+
+.dropdown {
+    float: left;
+    /* overflow: hidden; */
+    
 }
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    
+}
+
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    flex-direction: column;
+    z-index: 100;
+    height: 500px;
+    top: 2rem;
 }
 
 .dropdown-content a {
@@ -75,27 +147,137 @@ dropdown:hover .drop-btn {
     text-align: left;
 }
 
-.dropdown-content a:hover{
-    background-color: grey;
+.cart {
+    margin-right: 30px;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
+.shopping-0{
+color: black;
 }
 
-.cart{
-    margin-right: 20px;
-    padding-top: 1rem;
-}
 
-.cart a{
+.cart a {
     text-decoration: none;
     color: brown;
 }
 
 .header-text {
-    color: whitesmoke;
+    color: brown;
     font-size: 20px;
-    margin-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+.gallery {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #c0392b;
+    /* Rouge red color */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    /* Three items per row with a gap */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 1.2em;
     text-align: center;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+        /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+        /* One item per row on mobile devices */
+    }
+}
+
+.about-section {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.607)) url(../Gallery/IMG-20191116-WA0043.jpg);
+    
+}
+
+.about-text h5 {
+    color: orange;
+    font-size: larger;
+}
+
+.about-text h2 {
+    font-size: 50px;
+}
+
+/* .images {
+    display: flex;
+    width: 60%;
+    gap: 2rem;
+}
+
+.images img {
+    width: 246px;
+    height: 300px;
+} */
+
+

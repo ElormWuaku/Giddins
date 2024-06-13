@@ -17,7 +17,9 @@
                 </div>
                 <ul class="ul-list">
                     <li><a href="" class="nav-item">Home</a></li>
-                    <div class="dropdown">
+
+
+                    <li class="dropdown">
                         <button class="drop-btn">Shop
                             <i class="fa fa-caret-down"></i>
                         </button>
@@ -27,28 +29,112 @@
                             <a href="#">Best Sellers</a>
                             <a href="#">Special Offers</a>
                         </div>
-                        </li>
-                    </div>
+                    </li>
+
                     <li><a href="" class="nav-item">Gallery</a></li>
                     <li><a href="" class="nav-item">About Us</a></li>
                     <li><a href="" class="nav-item">Contact Us</a></li>
-                    <li><a href="" class="nav-item">Account</a></li>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
                 </ul>
                 <div class="cart">
-                    <span>0</span>
-                    <a href="#">Cart</a>
+                    <span class="shopping-0">0</span>
+                    <a href="#">Shopping Bag</a>
                 </div>
             </nav>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./Gallery/IMG-20191113-WA0027.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/IMG-20191114-WA0005.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/IMG-20191115-WA0013.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/IMG-20191116-WA0043.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/IMG-20191116-WA0051.jpg" style="width:100%">
+                </div>
+            </div>
+           
             <div class="header-text">
                 <h2>Welcome to Giddins</h2>
                 <P>Home of Authentic <br> Made in Ghana Leather shoes, <br> Bags and Other Accesories</P>
+            </div>>
+        </header>
+
+        <section class="gallery">
+            <div>
+                <h2>Our Gallery</h2>
             </div>
-            <div class="btn">
-                <button>Search</button>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="./Gallery/bag.jpg" alt="Handbag">
+                    <div class="overlay">
+                        <div class="overlay-text">Kipo Bag</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/beltpack.jpg" alt="belt in packaging">
+                    <div class="overlay">
+                        <div class="overlay-text">Giddins Belt</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/shoe.jpg" alt="Shoe">
+                    <div class="overlay">
+                        <div class="overlay-text">Loafers</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/slip.jpg" alt="Leather Slippers">
+                    <div class="overlay">
+                        <div class="overlay-text">Men's Leather Slipperws</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/gidbag.jpg" alt="Handbag">
+                    <div class="overlay">
+                        <div class="overlay-text">Handbags</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/IMG-20191115-WA0013.jpg" alt="Executive shoe">
+                    <div class="overlay">
+                        <div class="overlay-text">Oxford</div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h5>About Us</h5>
+                <h2>Discover Timesless Elegance<br> With Giddins</h2>
+                <p>Welcome to Giddins, a premier Ghanaian brand specializing in handcrafted leather products. We offer a
+                    range of stylish shoes for men and women, along with elegant handbags and belts.</p>
+                <p>Our products blend traditional Ghanaian craftsmanship with modern design, ensuring durability and
+                    timeless style. Each piece is meticulously crafted by skilled local artisans using the finest
+                    quality leather.
+                </p>
+                <p>By choosing Giddins, you support local artisans and celebrate Ghana's rich cultural heritage.
+                    Experience the elegance and authenticity of Giddins – where tradition meets style.</p>
+                <button class="about-btn" id="rm-btn">Read More</button>
             </div>
-        </header>  
+            <!-- <div class="images">
+                <img src="./Gallery/red bag.jpg" alt="Red Handbag">
+                <img src="./Gallery/IMG-20191116-WA0051.jpg" alt="Executive shoe" id="shoe">
+            </div> -->
+        </section>
     </div>
-   
+
+    <script src="./JS/index.js"></script>
 </body>
 
 </html>
