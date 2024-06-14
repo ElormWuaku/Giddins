@@ -5,69 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIDDINS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/6dc902f362.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div>
         <header class="header">
-            <nav id="nav-links">
-                <div class="logo">
-                    <img src="./Gallery/logo giddins.png" alt="Giddins logo">
-                </div>
-                <ul class="ul-list">
-                    <li><a href="" class="nav-item">Home</a></li>
-
-
-                    <li class="dropdown">
-                        <button class="drop-btn">Shop
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Men</a>
-                            <a href="#">Women</a>
-                            <a href="#">Best Sellers</a>
-                            <a href="#">Special Offers</a>
-                        </div>
-                    </li>
-
-                    <li><a href="" class="nav-item">Gallery</a></li>
-                    <li><a href="" class="nav-item">About Us</a></li>
-                    <li><a href="" class="nav-item">Contact Us</a></li>
+            <div class="top-nav">
+                <nav id="nav-links">
+                    <div class="logo">
+                        <img src="./Gallery/logo giddins.png" alt="Giddins logo">
+                    </div>
+                    <div class="menu-items">
+                        <span> <a href="">HOME</a></span>
+                        <span class="dropdown">
+                            <a href="">SHOP</a>
+                            <div class="dropdown-content">
+                                <a href="">Men</a>
+                                <a href="">Women</a>
+                                <a href="">Best Sellers</a>
+                                <a href="">Special Offers</a>
+                            </div>
+                        </span>
+                        <span> <a href="">GALLERY</a></span>
+                        <span> <a href="">ABOUT US</a></span>
+                        <span> <a href="">CONTACT</a></span>
+                    </div>
                     <div class="search-container">
                         <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <div class="form-fields">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
                         </form>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-basket-shopping"></i>
                     </div>
-                </ul>
-                <div class="cart">
-                    <span class="shopping-0">0</span>
-                    <a href="#">Shopping Bag</a>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="./Gallery/IMG-20191113-WA0027.jpg" style="width:100%">
+                    <img src="./Gallery/2people.jpg" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="./Gallery/IMG-20191114-WA0005.jpg" style="width:100%">
+                    <img src=".//Gallery/shoes.jpg" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="./Gallery/IMG-20191115-WA0013.jpg" style="width:100%">
+                    <img src="./Gallery/ladies.jpg" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="./Gallery/IMG-20191116-WA0043.jpg" style="width:100%">
+                    <img src="./Gallery/shoepairs.jpg" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="./Gallery/IMG-20191116-WA0051.jpg" style="width:100%">
+                    <img src="./Gallery/2bags.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/shoes.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./Gallery/2people.jpg" style="width:100%">
                 </div>
             </div>
-           
-            <div class="header-text">
+
+            <!-- <div class="header-text">
                 <h2>Welcome to Giddins</h2>
                 <P>Home of Authentic <br> Made in Ghana Leather shoes, <br> Bags and Other Accesories</P>
-            </div>>
+            </div>> -->
         </header>
 
         <section class="gallery">
@@ -76,27 +88,27 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="./Gallery/bag.jpg" alt="Handbag">
+                    <img src="./Gallery/2people.jpg" alt="Shoe">
                     <div class="overlay">
-                        <div class="overlay-text">Kipo Bag</div>
+                        <div class="overlay-text">Male & Female blue Loafers</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./Gallery/beltpack.jpg" alt="belt in packaging">
+                    <img src="./Gallery/shoes1.jpg" alt="belt in packaging">
                     <div class="overlay">
-                        <div class="overlay-text">Giddins Belt</div>
+                        <div class="overlay-text">Coffee Brown Loafer</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./Gallery/shoe.jpg" alt="Shoe">
+                    <img src="./Gallery/shoes.jpg" alt="Shoe">
                     <div class="overlay">
-                        <div class="overlay-text">Loafers</div>
+                        <div class="overlay-text">Tan Oxfords</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./Gallery/slip.jpg" alt="Leather Slippers">
+                    <img src="./Gallery/shoes 3.jpg" alt="Leather Slippers">
                     <div class="overlay">
-                        <div class="overlay-text">Men's Leather Slipperws</div>
+                        <div class="overlay-text">Black Derby</div>
                     </div>
                 </div>
                 <div class="gallery-item">
@@ -106,9 +118,45 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./Gallery/IMG-20191115-WA0013.jpg" alt="Executive shoe">
+                    <img src="./Gallery/bag.jpg" alt="Executive shoe">
                     <div class="overlay">
-                        <div class="overlay-text">Oxford</div>
+                        <div class="overlay-text">Handbags</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/brown bag.jpg" alt="Tote bag">
+                    <div class="overlay">
+                        <div class="overlay-text">Handbags</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/whitebag.jpg" alt="Giddins">
+                    <div class="overlay">
+                        <div class="overlay-text">Handbags</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/backpack.jpg" alt="Giddins">
+                    <div class="overlay">
+                        <div class="overlay-text">Backpacks</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/beltpack.jpg" alt="Giddins">
+                    <div class="overlay">
+                        <div class="overlay-text">Belts</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/birks.jpg" alt="Giddins">
+                    <div class="overlay">
+                        <div class="overlay-text">Giddins Berks</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Gallery/sandals1.jpg" alt="Giddins">
+                    <div class="overlay">
+                        <div class="overlay-text">Ladies Sandals</div>
                     </div>
                 </div>
         </section>
@@ -116,7 +164,7 @@
         <section class="about-section">
             <div class="about-text">
                 <h5>About Us</h5>
-                <h2>Discover Timesless Elegance<br> With Giddins</h2>
+                <h2>Meet our CEO <br> Gideon Dendzo</h2>
                 <p>Welcome to Giddins, a premier Ghanaian brand specializing in handcrafted leather products. We offer a
                     range of stylish shoes for men and women, along with elegant handbags and belts.</p>
                 <p>Our products blend traditional Ghanaian craftsmanship with modern design, ensuring durability and
@@ -125,15 +173,47 @@
                 </p>
                 <p>By choosing Giddins, you support local artisans and celebrate Ghana's rich cultural heritage.
                     Experience the elegance and authenticity of Giddins – where tradition meets style.</p>
-                <button class="about-btn" id="rm-btn">Read More</button>
+                <button class="about-btn" id="rm-btn"> <a href="https://www.mygiddins.com/">Read More</a></button>
             </div>
-            <!-- <div class="images">
-                <img src="./Gallery/red bag.jpg" alt="Red Handbag">
-                <img src="./Gallery/IMG-20191116-WA0051.jpg" alt="Executive shoe" id="shoe">
-            </div> -->
+            <div class="about-images">
+                <!-- <img src="./Gallery/ceo.jpg" alt="Red Handbag"> -->
+            </div>
         </section>
     </div>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Giddins</h2>
+                <p>Giddins is a Ghanaian brand specializing in handcrafted leather products. Discover our range of stylish shoes, elegant handbags, and sophisticated belts.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@giddins.com</p>
+                <p>Phone: +233 24 123 4567</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Giddins. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="./JS/index.js"></script>
 </body>
 
